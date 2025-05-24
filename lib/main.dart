@@ -60,7 +60,6 @@ class MyApp extends StatelessWidget {
                                     Tab(text: '키패드'),
                                     Tab(text: '최근기록'),
                                     Tab(text: '연락처'),
-
                                   ],
                                   labelColor: Colors.white,
                                   labelStyle: TextStyle(
