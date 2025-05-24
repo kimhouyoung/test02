@@ -64,7 +64,6 @@ class MyApp extends StatelessWidget {
                                   labelColor: Colors.white,
                                   labelStyle: TextStyle(
                                       fontSize: 22
-
                                   ),
                                   unselectedLabelColor: Color.fromARGB(240, 151, 151, 151),
                                   unselectedLabelStyle: TextStyle(
