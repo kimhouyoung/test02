@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
                                 border: Border(
                                   bottom: BorderSide(
                                     color: Colors.transparent,
+
                                     width: 0
                                   ),
                                 )
