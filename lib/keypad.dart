@@ -136,10 +136,12 @@ class _KeypadWidget extends State<KeypadView> {
             ),
             IconButton(
               onPressed: () {
-                _editingController.text = _editingController.text.substring(
-                  0,
-                  _editingController.text.length - 1,
-                );
+                if(_editingController.text.isNotEmpty) {
+                  _editingController.text = _editingController.text.substring(
+                    0,
+                    _editingController.text.length - 1,
+                  );
+                }
               },
               icon: Container(
                 width: 80,

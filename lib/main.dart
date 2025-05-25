@@ -51,7 +51,6 @@ class MyApp extends StatelessWidget {
                                 border: Border(
                                   bottom: BorderSide(
                                     color: Colors.transparent,
-
                                     width: 0
                                   ),
                                 )
@@ -70,8 +69,9 @@ class MyApp extends StatelessWidget {
                                   unselectedLabelStyle: TextStyle(
                                       fontSize: 20
                                   ),
-                                  indicatorColor: Colors.white,
-                                  indicatorWeight: 1,
+                                  indicator: BoxDecoration(
+                                    border: Border()
+                                  ),
                                 )
                             ),
                           )
