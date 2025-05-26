@@ -126,8 +126,8 @@ class _KeypadWidget extends State<KeypadView> {
               child: Icon(Icons.videocam, color: Colors.green, size: 40),
             ),
             Container(
-              width: 85,
-              height: 85,
+              width: 80,
+              height: 80,
               decoration: BoxDecoration(
                 color: Colors.green,
                 borderRadius: BorderRadius.circular(50),

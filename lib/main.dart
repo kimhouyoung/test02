@@ -1,10 +1,9 @@
 import 'package:test2/recent.dart';
 import 'package:test2/telephone.dart';
-import 'package:test2/telephone.dart';
 import 'package:flutter/material.dart';
 
 import 'keypad.dart';
-import 'telephone.dart';
+import 'live_chat.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,63 +22,66 @@ class MyApp extends StatelessWidget {
             splashColor: Colors.transparent,
             highlightColor: Colors.transparent
         ),
-        home: DefaultTabController(
-            initialIndex: 2,
-            length: 3,
-            child: SafeArea(
-                child: Scaffold(
-                    backgroundColor: Colors.black,
-                    body: Column(
-                        children: [
-                          Expanded(
-                            child: TabBarView(
-                                children: [
-                                  KeypadView(),
-                                  SingleChildScrollView(
-                                    child: Recent(),
-                                  ),
-                                  SingleChildScrollView(
-                                    child: Telephone(),
-                                  )
-                                ]
-                            ),
-                          ),
-                          SizedBox(
-                              height: 70,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                border: Border(
-                                  bottom: BorderSide(
-                                    color: Colors.transparent,
-                                    width: 0
-                                  ),
-                                )
-                              ),
-                                child: const TabBar(
-                                  tabs: [
-                                    Tab(text: '키패드'),
-                                    Tab(text: '최근기록'),
-                                    Tab(text: '연락처'),
-                                  ],
-                                  labelColor: Colors.white,
-                                  labelStyle: TextStyle(
-                                      fontSize: 22
-                                  ),
-                                  unselectedLabelColor: Color.fromARGB(240, 151, 151, 151),
-                                  unselectedLabelStyle: TextStyle(
-                                      fontSize: 20
-                                  ),
-                                  indicator: BoxDecoration(
-                                    border: Border()
-                                  ),
-                                )
-                            ),
-                          )
-                        ]
-                    )
-                )
-            )
+        home: Material(
+          child: LiveChat(),
         )
+        // DefaultTabController(
+        //     initialIndex: 2,
+        //     length: 3,
+        //     child: SafeArea(
+        //         child: Scaffold(
+        //             backgroundColor: Colors.black,
+        //             body: Column(
+        //                 children: [
+        //                   Expanded(
+        //                     child: TabBarView(
+        //                         children: [
+        //                           KeypadView(),
+        //                           SingleChildScrollView(
+        //                             child: Recent(),
+        //                           ),
+        //                           SingleChildScrollView(
+        //                             child: Telephone(),
+        //                           )
+        //                         ]
+        //                     ),
+        //                   ),
+        //                   SizedBox(
+        //                       height: 70,
+        //                     child: Container(
+        //                       decoration: BoxDecoration(
+        //                         border: Border(
+        //                           bottom: BorderSide(
+        //                             color: Colors.transparent,
+        //                             width: 0
+        //                           ),
+        //                         )
+        //                       ),
+        //                         child: const TabBar(
+        //                           tabs: [
+        //                             Tab(text: '키패드'),
+        //                             Tab(text: '최근기록'),
+        //                             Tab(text: '연락처'),
+        //                           ],
+        //                           labelColor: Colors.white,
+        //                           labelStyle: TextStyle(
+        //                               fontSize: 22
+        //                           ),
+        //                           unselectedLabelColor: Color.fromARGB(240, 151, 151, 151),
+        //                           unselectedLabelStyle: TextStyle(
+        //                               fontSize: 20
+        //                           ),
+        //                           indicator: BoxDecoration(
+        //                             border: Border()
+        //                           ),
+        //                         )
+        //                     ),
+        //                   )
+        //                 ]
+        //             )
+        //         )
+        //     )
+        // )
     );
   }
 }
