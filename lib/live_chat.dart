@@ -161,6 +161,7 @@ class _LiveChatState extends State<LiveChat> {
             ),
           ],
         ),
+
       ),
       resizeToAvoidBottomInset: true,
     );

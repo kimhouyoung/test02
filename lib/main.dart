@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
           child: LiveChat(),
         )
         // DefaultTabController(
+
         //     initialIndex: 2,
         //     length: 3,
         //     child: SafeArea(

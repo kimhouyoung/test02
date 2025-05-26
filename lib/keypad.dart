@@ -63,6 +63,7 @@ class _KeypadWidget extends State<KeypadView> {
           child: SizedBox(
             child: TextField(
               inputFormatters: [
+
                 ContactNumberFormatter()
               ],
               controller: _editingController,

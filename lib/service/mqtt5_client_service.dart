@@ -5,6 +5,5 @@ Future<MqttServerClient> connectMqttBroker() async {
 
   client.logging(on: true);
   await client.connect();
-
   return client;
 }
