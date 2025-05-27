@@ -23,10 +23,14 @@ class MyApp extends StatelessWidget {
             highlightColor: Colors.transparent
         ),
         home: Material(
-          child: LiveChat(),
+          child: GestureDetector(
+            onTap: () {
+              FocusManager.instance.primaryFocus?.unfocus();
+            },
+            child: LiveChat(),
+          ),
         )
         // DefaultTabController(
-
         //     initialIndex: 2,
         //     length: 3,
         //     child: SafeArea(
